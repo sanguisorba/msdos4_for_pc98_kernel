@@ -5,7 +5,7 @@ FreeDOS(98)のカーネルを使ってMS-DOS 4.0を実行します。
 
 途中で放っていたものですがAIが続きを書いてくれました。
 
-FreeDOS(98)の派生物みたいなものなのでコネクタ部分のライセンスもGPL2にしておきます。
+FreeDOS(98)の派生物みたいなものなのでアダプタ部分のライセンスもGPL2にしておきます。
 
 * 日本語 MSDOS.SYS, COMMAND.COM<br>
 https://github.com/sanguisorba/DOS400_JAP
@@ -18,13 +18,13 @@ FreeDOS(98), MS-DOS のソースコードにはなるべく手をつけず、間
 
 ビルドするとKERNEL.SYSが出来上がるのでこれをFreeDOS(98)のIPLで読み込んで起動させます。
 
-KERNEL.SYSには本来IO.SYSとMSDOS.SYSに相当する機能があります。本ビルドではMSDOS.SYSの機能を欠落させ、代わりに外部のMSDOS.SYSを読むためのコネクタを起動します。
+KERNEL.SYSには本来IO.SYSとMSDOS.SYSに相当する機能があります。本ビルドではMSDOS.SYSの機能を欠落させ、代わりに外部のMSDOS.SYSを読むためのアダプタを起動します。
 
 # 中身
 * licenses - 引用してきたファイルたちのライセンス情報。emu2のソースコードはGPL2に則り添付してあります。
 * scripts - ビルドスクリプト。かつてはMakefileでやっていましたがAIとしてはPythonのほうがやりやすいみたい。
-* source - アダプタの中身です。
-* src - KERNEL.SYSを生成するのに必要なFreeDOS(98)とMSDOSのソースコードです。
+* source - KERNEL.SYSを生成するのに必要なFreeDOS(98)とMSDOSのソースコードです。
+* src - アダプタの中身です。
 * tools - Ubuntu用ビルドツール一式。
 
 ## FreeDOS(98)の改変内容
