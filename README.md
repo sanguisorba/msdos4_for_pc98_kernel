@@ -7,6 +7,12 @@ FreeDOS(98)のカーネルを使ってMS-DOS 4.0を実行します。
 
 FreeDOS(98)の派生物みたいなものなのでコネクタ部分のライセンスもGPL2にしておきます。
 
+* 日本語 MSDOS.SYS, COMMAND.COM<br>
+https://github.com/sanguisorba/DOS400_JAP
+
+* FDFORMAT for MSDOS 4.0<br>
+https://github.com/sanguisorba/fdformat/
+
 # 概要
 FreeDOS(98), MS-DOS のソースコードにはなるべく手をつけず、間をつなげるアダプタモジュールを作って起動します。
 
